@@ -1,0 +1,163 @@
+body {
+    background-color: #FAF9F6;
+    font-family: "Inter", serif;
+}
+
+
+#logo {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 158px;
+    height: 48px;
+}
+
+#student_login {
+    width: 693px;
+    height: 693px;
+    margin-left: 50px;
+    margin-top: -20px;
+
+}
+
+#login_card {
+    box-shadow:20px #7a7a7a ;
+    margin-top: 68px;
+    width: 410px;
+    height: 418px;
+    border: 0.5px solid rgb(163, 163, 163);
+    border-radius: 25px;
+    background-color: white;
+    padding: 2%;
+    margin-right: 250px;
+
+}
+
+.body {
+    display: flex;
+}
+
+.child {
+    flex: 1;
+}
+
+
+/* toggle button  */
+
+.toggleCheckbox {
+    display: none;
+}
+
+.toggleContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    border: 3px solid #1691F9;
+    border-radius: 20px;
+    background: #1691F9;
+    font-weight: bold;
+    color: #1691F9;
+    cursor: pointer;
+}
+
+.toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    border-radius:20px;
+    background: white;
+    transition: all 0.3s;
+ }
+
+ .toggleContainer div {
+    padding: 6px;
+    text-align: center;
+    z-index: 1;
+ }
+
+ .toggleCheckbox:checked + .toggleContainer::before {
+    left: 50%;
+ }
+
+ .toggleCheckbox:checked + .toggleContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+ }
+ .toggleCheckbox:checked + .toggleContainer div:last-child{
+    color: #1691F9;
+    transition: color 0.3s;
+ }
+ .toggleCheckbox + .toggleContainer div:first-child{
+    color: #1691F9;
+    transition: color 0.3s;
+ }
+ .toggleCheckbox + .toggleContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+ }
+
+
+ /* login form  */
+
+ .login_form {
+    margin-top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border-radius: 10px;
+    margin-top: -18px;
+   
+}
+
+.login_form table {
+    width: 100%;
+}
+
+.login_form input[type="email"],
+.login_form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #87CEFA; /* Light blue border */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login_form input[type="email"]:focus,
+.login_form input[type="password"]:focus {
+    outline: none;
+    border-color: #4682B4; /* Darker blue border on focus */
+}
+
+.login_form p {
+    margin: 0;
+    font-weight: bold;
+    color: black; /* Dark blue text color */
+    
+}
+
+.login_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid black; /* Light blue border */
+    border-radius: 5px;
+    color: whitesmoke; /* Dark blue text color */
+    cursor: pointer;
+}
+
+.login_form button:hover {
+    background-color: rgb(57, 57, 57); /* Light blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.chipBtn{
+    text-align: right;
+}
+
+.chipBtn span{
+    /* margin-left: 30%; */
+    padding-right: 2px;
+}

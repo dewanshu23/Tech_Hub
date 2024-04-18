@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Student</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <img src="img/logo.png" id="logo">
+    </div>
+    <div class="body">
+        <div class="child" id="image">
+            <img src="img/student_login.png" class="child" id="student_login">
+
+        </div>
+
+        <!-- loin card -->
+
+        <div id="login_card">
+            <br>
+            <div class="login_as" style="display: flex; margin-bottom: 40px; ">
+
+               <b> <span style="font-size: xx-large;" style="flex: 1; ">Login as</span></b>
+                <!-- toggle button  -->
+                <div class="login_as_div" style="flex: 1; margin-left: 20px;">
+
+                    <input type="checkbox" id="toggle" class="toggleCheckbox" onclick="userTypeChnager()"/>
+                    <label for="toggle" class="toggleContainer">
+                        <div>Student</div>
+                        <div>Alumni</div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- loginform -->
+            <br><br>
+            <div class="login_form">
+                <table>
+                    <tr>
+                        <td>
+                            <p>Username</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <p>Password</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Enter your password"></td>
+                    </tr>
+                </table>
+                <a href="html/forgot_password.html" style=" margin-left: 65%; color: #1691F9;">Forgot Password?</a>
+                <h1><button class="chipBtn" style="width: 100%; font-size: large; margin-bottom: -9px;" >Login <span >&rarr;</span></button></h1>
+                <p style="margin-left: 22%; font-size: 16px;" >Not yet registered? <a href="html/signup.html" style="color: #1691F9; font-size: smaller;">Signup</a> here</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="js/index.js">
+
+    </script>
+</body>
+
+</html>

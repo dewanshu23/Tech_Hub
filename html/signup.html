@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+    <link rel="stylesheet" href="../css/signup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7a5e47768.js" crossorigin="anonymous"></script>
+    <title>Login Student</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <img src="../img/logo.png" id="logo">
+    </div>
+    <div class="body">
+
+
+        <!-- loin card -->
+
+        <div id="login_card">
+            <br>
+            <div class="login_as" style="display: flex; margin-bottom: 40px; ">
+
+                <b> <span style="font-size: xx-large;" style="flex: 1; ">Register as</span></b>
+                <!-- toggle button  -->
+                <div class="login_as_div" style="flex: 1; margin-left: 20px;">
+
+                    <input type="checkbox" id="toggle" class="toggleCheckbox" onclick="userTypeChanger()" />
+                    <label for="toggle" class="toggleContainer">
+                        <div>Student</div>
+                        <div>Alumni</div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- loginform -->
+            <br><br>
+            <div class="login_form">
+                <div class="child" id="section1">
+                    <table>
+
+                        <tr>
+                            <td>
+                                <p>Name</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Full name">
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <p>Email</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Enter your email"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Stream</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="course" name="course">
+                                    <option value="bsc_it">BSc IT</option>
+                                    <option value="bsc_cs">BSc CS</option>
+                                    <option value="baf">BAF</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child" id="section2">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Password</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Enter your Password"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Confirm Password</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Re-enter your Password"></td>
+                        </tr>
+
+                        
+                            <tr>
+                                <td>
+                                    <p id="yearText">Year</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="year" ><select name="year">
+                                        <option value="first_year">First Year </option>
+                                        <option value="second_year">Second Year</option>
+                                        <option value="third_year">third_year</option>
+                                    </select></td>
+                            </tr>
+                        
+                    </table>
+                </div>
+                </table>
+
+
+
+            </div>
+            <h1><button class="chipBtn" style=" font-size: x-large;">
+                    <p style="text-align: center; color: white;">Register<i class="fa-solid fa-arrow-right"
+                            style="position: absolute; margin-left:65px;"></i>
+                    </p>
+                </button></h1>
+
+        </div>
+    </div>
+
+
+
+    <script src="../js/signup.js">
+
+    </script>
+</body>
+
+</html>
